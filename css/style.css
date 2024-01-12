@@ -1,0 +1,419 @@
+
+@font-face {
+   font-family: "Gilroy";
+   src: url('../font/Gilroy-Regular.ttf');
+   font-weight: 400;
+ }
+ @font-face {
+   font-family: "Gilroy";
+   src: url('../font/Gilroy-Medium.ttf');
+   font-weight: 500;
+ }
+ @font-face {
+   font-family: "Impact";
+   src: url('../font/impact.ttf');
+   font-weight: 400;
+ }
+body {
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: normal;
+  background: #000000;
+  color: #fff;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px !important;
+  outline: none !important;
+}
+
+
+img {
+	max-width:100%;
+}
+
+button,
+input {
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+.section{
+   padding: 50px 0;
+}
+.container {
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+@media (min-width: 768px) {
+   .container {
+       width: 750px;
+   }
+}
+
+@media (min-width: 992px) {
+   .container {
+       width: 970px;
+   }
+}
+
+@media (min-width: 1200px) {
+   .container {
+       width: 1200px;
+   }
+}
+
+@media (min-width: 1350px){
+   .container {
+      width: 1350px;
+  }
+  
+}
+
+
+
+/* MOBILE */
+.header{
+   position: fixed;
+   top: 10px;
+   left: 0;
+   width: 100%;
+
+}
+.header .burger span:nth-child(1){
+   top: 0;
+}
+.header .burger span:nth-child(2){
+   top: 50%;
+}
+.header .burger span:nth-child(3){
+   bottom: 0;
+}
+.header .burger span{
+   position: absolute;
+
+   width: 100%;
+   background: #fff;
+   height: 1px;
+}
+.header .burger{
+   position: relative;
+   display: flex;
+   width: 20px;
+   height: 20px;
+}
+.header .container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.header h2{
+   color: #FFF;
+   font-family: Gilroy;
+   font-size: 18px;
+   font-weight: 500;
+   text-transform: uppercase;
+}
+.main{
+   position: relative;
+   height: 100vh;
+}
+.main .bacround video,
+.main .bacround img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.main .bacround{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+}
+.main .text-up{
+   max-width: 180px;
+   margin-bottom: 90px;
+}
+.main .text-down{
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+   text-align: right;   
+}
+
+.main h1{
+   color: #FFF;
+   font-family: Impact;
+   font-size: 70px;
+   font-weight: 400;
+   line-height: 110%; 
+   text-transform: uppercase;
+   margin-bottom: 40px;
+}
+.main h2{
+   color: #FF2B2B;
+   font-family: Gilroy;
+   font-size: 18px;
+   font-weight: 500; 
+   margin-bottom: 5px;
+   text-transform: uppercase;
+}
+.main p{
+   color: rgba(255, 255, 255, 0.50);
+   font-family: Gilroy;
+   font-size: 10px;
+   font-weight: 400;
+   max-width: 175px;
+   margin-bottom: 20px;
+}  
+.main .text-down p{
+   max-width: 230px;
+   text-align: start;
+}
+.main a{
+   color: #FFF;
+   font-family: Gilroy;
+   font-size: 10px;
+   font-weight: 400;
+   line-height: normal;
+   text-transform: uppercase;
+
+   text-decoration: none;
+}
+.main span{
+   margin-top: 5px;
+
+   width: 100%;
+   display: flex;
+   height: 1px;
+   background: #FF2B2B;
+}
+
+.video .title,
+.perfomance .title {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 10px;
+   margin-bottom: 40px;
+}
+.video .title h2,
+.perfomance .title h2{
+   color: #FFF;
+   font-family: Impact;
+   font-size: 50px;
+   font-weight: 400;
+   line-height: 110%;
+   max-width: 250px;
+   text-transform: uppercase;
+}
+.video .title p,
+.perfomance .title p{
+   color: rgba(255, 255, 255, 0.30);
+   font-family: Gilroy;
+   font-size: 10px;
+   font-weight: 400;
+   max-width: 47px;
+}
+.perfomance .images img{
+   margin-bottom: 20px;
+}
+.perfomance .images{
+   display: flex;
+   flex-direction: column;
+}
+.perfomance .images span{
+   color: rgba(255, 255, 255, 0.50);
+   font-family: Gilroy;
+   font-size: 10px;
+   font-weight: 400;
+   max-width: 110px;
+   margin-left: auto;
+}
+.perfomance .images p{
+   color: #FF2B2B;
+   font-family: Gilroy;
+   font-size: 18px;
+   font-weight: 400;
+   max-width: 110px;
+   margin-left: auto;
+}
+.perfomance .text{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 10px;
+}
+.perfomance .text{
+   margin-top: 60px;
+}
+.perfomance .text  h4{
+   max-width: 55px;
+   margin-left: auto;
+      color: rgba(255, 255, 255, 0.50);
+   font-family: Gilroy;
+   font-size: 10px;
+   font-weight: 400;
+}
+.perfomance .text .block p{
+   color: #FFF;
+   font-family: Gilroy;
+   font-size: 10px;
+   font-weight: 400;
+   max-width: 110px;
+
+   margin: 0;
+}
+.perfomance .text .block{
+   display: flex;
+   gap: 10px;
+   flex-direction: column;
+}
+
+.about{
+   margin-bottom: 20px;
+}
+.about h2{
+   color: #FFF;
+   font-family: Impact;
+   font-size: 50px;
+   font-weight: 400;
+   text-transform: uppercase;
+   margin: 0 auto;
+   text-align: center;
+}
+.about video,
+.about img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.video .text span{
+   width: 100%;
+   height: 1px;
+   background: #FF2B2B;
+
+}
+.video .link{
+   max-width: 190px;
+   display: flex;
+   gap: 5px;
+   text-align: end;
+   flex-direction: column;
+}
+.video .text a{
+   color: #FFF;
+   font-family: Gilroy;
+   font-size: 10px;
+   font-weight: 400;
+   text-transform: uppercase;
+   text-decoration: none;
+}
+.video .text h3{
+   color: #FFF;
+   font-family: Gilroy;
+   font-size: 10px;
+   font-weight: 400;
+   max-width: 155px;
+   margin-bottom: 30px;
+
+}
+.video .text p{
+   color: #FF2B2B;
+   font-family: Gilroy;
+   font-size: 18px;
+   font-weight: 400;
+   max-width: 130px;
+   margin-bottom: 40px;
+}
+.video .text img{
+   margin-bottom: 25px;
+}
+
+
+.footer{
+   margin-bottom: 50px;
+}
+.footer span{
+   width: 100%;
+   height: 1px;
+   background: #FF2B2B;
+   display: flex;
+}
+.footer .title h2{
+   color: #FFF;
+   font-family: Impact;
+   font-size: 50px;
+   font-weight: 400;
+   line-height: 110%; /* 55px */
+   text-transform: uppercase;
+   margin-bottom: 30px;
+}
+.footer .title h3{
+   color: #FFF;
+   font-family: Gilroy;
+   font-size: 18px;
+   font-weight: 400;
+   margin-bottom: 20px;
+   text-transform: uppercase;
+}
+
+.footer .links a{
+   color: #FFF;
+   font-family: Gilroy;
+   font-size: 10px;
+   font-weight: 400;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+.footer .social a{
+   color: #FFF;
+   font-family: Gilroy;
+   font-size: 10px;
+   font-weight: 400;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+.footer h4{
+   color: #FFF;
+   font-family: Gilroy;
+   font-size: 10px;
+   font-weight: 400;
+}
+.footer h3{
+   color: #FF2B2B;
+   font-family: Gilroy;
+   font-size: 18px;
+   font-weight: 400;
+   margin-bottom: 30px;
+}
+.footer .social{
+   display: flex;
+   margin-bottom: 30px;
+   align-items: center;
+   gap: 50px;
+}
+.footer .links{
+   margin-top: 10px;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   margin-bottom: 30px;
+}
