@@ -259,6 +259,13 @@ input {
    text-align: end;
    max-width: 360px;
 }
+.main h3{
+   color: #FF2B2B;
+   font-family: Gilroy;
+   font-size: 18px;
+   font-weight: 400;
+   text-transform: capitalize;
+}
 .main a{
    color: #FFF;
    font-family: Gilroy;
@@ -412,6 +419,7 @@ input {
    font-size: 18px;
    font-weight: 400;
    text-decoration: none;
+   padding-bottom: 5px;
    text-transform: uppercase;
 }
 .video .block-down .link{
