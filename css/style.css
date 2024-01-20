@@ -53,7 +53,7 @@ input {
 }
 
 .section{
-   padding: 60px 0;
+   padding: 100px 0;
 }
 .container {
    padding-right: 15px;
@@ -112,7 +112,7 @@ input {
    top: 10px;
    left: 0;
    width: 100%;
-   z-index: 2;
+   z-index: 200;
 }
 .header .burger span:nth-child(1){
    top: 0;
@@ -125,17 +125,21 @@ input {
 .header .burger span:nth-child(3){
    bottom: 0;
 }
+.header .menu{
+   margin-left: 430px;
+}
 .header .menu a.active,
 .header .menu a:hover{
    color: #FF2B2B;
    transition: .2s ease-in-out;
 }
-.header p{
+.absolite.text p{
    top: 10px;
+   right: 100px;
    position: absolute;
       color: rgba(255, 255, 255, 0.30);
    font-family: Gilroy;
-   font-size: 18px;
+   font-size: 16px;
    font-weight: 400;
    max-width: 80px;
 }
@@ -164,6 +168,7 @@ input {
    flex-direction: column;
    gap: 5px;
 }
+
 .header .burger span{
    position: absolute;
 
@@ -217,7 +222,7 @@ input {
    line-height: 110%; 
    text-transform: uppercase;
    margin-bottom: 150px;
-   margin-top: 250PX;
+   margin-top: 210PX;
 }
 .main .text-down h1{
    font-size: 150px;
@@ -225,6 +230,10 @@ input {
 }
 .mobile{
    display: none;
+}
+.main .red{
+   max-width: 800px;
+   width: 100%;
 }
 .main .text-up{
    margin-bottom: 90px;
@@ -245,18 +254,24 @@ input {
    text-transform: uppercase;
    text-align: end;
 }
-
+.main .red h2{
+   margin-right: 10px;
+}
+.main .red p{
+   margin-left: auto;
+}
 .main p{
    color: rgba(255, 255, 255, 0.50);
    font-family: Gilroy;
-   font-size: 18px;
+   font-size: 17px;
    font-weight: 400;
    max-width: 365px;
+   
    margin-bottom: 20px;
 }  
 .main .link{
    width: 100%;
-   text-align: end;
+   text-align: start;
    max-width: 360px;
 }
 .main h3{
@@ -271,9 +286,8 @@ input {
    font-family: Gilroy;
    font-size: 18px;
    font-weight: 400;
-   line-height: normal;
    text-transform: uppercase;
-
+   margin-left: 10px;
    text-decoration: none;
 }
 .main span{
@@ -320,6 +334,7 @@ input {
    position: relative;
 }
 .about h2{
+   margin-top: 20px;
    color: #FFF;
    font-family: Impact;
    font-size: 150px;
@@ -329,12 +344,14 @@ input {
    text-align: center;
 }
 .about .text p{
+   margin-top: -60px;
    color: #FF2B2B;
    font-family: Gilroy;
    font-size: 14px;
    font-weight: 400;
 }
 .about .text{
+   margin-top: -100px;
    display: flex;
    justify-content: space-between;
    align-items: end;
@@ -364,6 +381,7 @@ input {
    font-family: Gilroy;
    font-size: 18px;
    font-weight: 400;
+   max-width: 240px;
 }
 .about .pc-absolute{
    display: flex;
@@ -373,8 +391,13 @@ input {
    top: 0;
    left: 0;
 }
+.video .block-up .decr{
+   display: flex;
+   align-items: center;
+}
 .video .block-up .decr p{
       color: #FF2B2B;
+   margin-bottom: 30px;
    font-family: Gilroy;
    font-size: 40px;
    font-weight: 400;
@@ -416,6 +439,7 @@ input {
 .video .block-down .link a{
    color: #FFF;
    font-family: Gilroy;
+   margin-left: 40px;
    font-size: 18px;
    font-weight: 400;
    text-decoration: none;
@@ -444,6 +468,9 @@ input {
    font-weight: 400;
    max-width: 260px;
 }
+.footer{
+   margin-top: 100px;
+}
 .footer span{
    width: 100%;
    background: #FF2B2B;
@@ -451,6 +478,7 @@ input {
    height: 1px;
 }
 .footer .title h3{
+   margin-top: 50px;
    color: #FFF;
    font-family: Gilroy;
    font-size: 40px;
@@ -559,7 +587,7 @@ text-transform: capitalize;
 }
 
 .main .text-down p{
-   max-width: 230px;
+   max-width: 240px;
    text-align: start;
 }
 .main a{
@@ -622,12 +650,21 @@ text-transform: capitalize;
    max-width: 110px;
    margin-left: auto;
 }
+.perfomance .images span{
+   margin: 20px 0;
+   margin-left: auto;
+   max-width: 160px;
+}  
 .perfomance .images p{
    color: #FF2B2B;
    font-family: Gilroy;
    font-size: 18px;
    font-weight: 400;
    max-width: 110px;
+   margin: 20px 0;
+   margin-right: 0px;
+   max-width: 160px;
+
    margin-left: auto;
 }
 .perfomance .text{
@@ -686,11 +723,14 @@ text-transform: capitalize;
    background: #FF2B2B;
 
 }
+.video .link a{
+   margin-left: 10px;
+}
 .video .link{
    max-width: 190px;
    display: flex;
    gap: 5px;
-   text-align: end;
+   text-align: start;
    flex-direction: column;
 }
 .video .text a{
@@ -721,8 +761,12 @@ text-transform: capitalize;
 .video .text img{
    margin-bottom: 25px;
 }
-
-
+.about .text{
+   margin-top: -20px;
+}
+.about video, .about img{
+   margin-top: -100px;
+}
 .footer{
    margin-bottom: 50px;
 }
@@ -739,14 +783,17 @@ text-transform: capitalize;
    font-weight: 400;
    line-height: 110%; /* 55px */
    text-transform: uppercase;
-   margin-bottom: 30px;
+   margin-bottom: 10px;
+}
+.footer .title{
+   padding-bottom: 0;
 }
 .footer .title h3{
    color: #FFF;
    font-family: Gilroy;
    font-size: 18px;
    font-weight: 400;
-   margin-bottom: 20px;
+   margin-bottom: 15px;
    text-transform: uppercase;
 }
 
@@ -819,7 +866,7 @@ text-transform: capitalize;
       display: none;
    }
    .main{
-      height: 100vh;
+      height: 80vh;
    }
    .mobile,
    .perfomance .title, .perfomance .mobile{
@@ -827,7 +874,7 @@ text-transform: capitalize;
    }
    .main h1,
    .main .text-down{
-      margin-top: 20px;
+      margin-top: 10px;
    }
    .main .text-up .block{
       display: flex;
@@ -839,6 +886,13 @@ text-transform: capitalize;
    .main h1,
    .main .text-down h1{
       font-size: 70px;
+   }
+   .main h1,
+   .main .text-down h1{
+      margin-bottom: 20px;
+   }
+   .section{
+      padding: 50px 0;
    }
    .header .menu{
      right: -100%;
