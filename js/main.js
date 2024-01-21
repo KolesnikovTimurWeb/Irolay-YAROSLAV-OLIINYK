@@ -5,7 +5,6 @@ burger.addEventListener('click', function () {
    menu.classList.toggle('active')
    console.log('asdasd')
 })
-let promise = document.querySelectorAll('video')
-promise.forEach(el => {
-   el.play()
-})
+let promise = document.querySelector('.main video').play()
+let promise2 = document.querySelector('.about video').play()
+
