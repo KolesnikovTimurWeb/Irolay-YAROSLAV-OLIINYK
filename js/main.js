@@ -5,3 +5,4 @@ burger.addEventListener('click', function () {
    menu.classList.toggle('active')
    console.log('asdasd')
 })
+promise = document.querySelector('video').play() 
