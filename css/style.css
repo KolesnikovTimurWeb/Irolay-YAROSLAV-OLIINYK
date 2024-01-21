@@ -874,7 +874,7 @@ text-transform: capitalize;
    }
    .main h1,
    .main .text-down{
-      margin-top: 10px;
+      margin-top: 0px;
    }
    .main .text-up .block{
       display: flex;
